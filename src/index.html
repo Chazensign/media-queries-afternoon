@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c75821042.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  <nav class='nav-top'>
+    <div class='li-cont'>
+    <div class='title'>Start Bootstrap</div>
+      <div class='links'>
+        <a class='nav-link'>SERVICES</a>
+        <a class='nav-link'>PORTFOLIO</a>
+        <a class='nav-link'>ABOUT</a>
+        <a class='nav-link'>TEAM</a>
+        <a class='nav-link'>CONTACT</a>
+      </div>
+      <button id='drop-menu'>MENU <i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+  <div class='welcome-wrap'>
+  <h2 id='welcome'>Welcome To Our Studio!</h2>
+  <h1 id='nice'>IT'S NICE TO MEET YOU</h1>
+  <button class='tell'>TELL ME MORE</button>
+</div>
+  </header>
+  <section>
+    <div class='serv-box'>
+      <div class='serv'>SERVICES</div>
+      <div class='serv-des'>Lorem ipsum dolor sit amet consectetur.</div>
+    </div>
+    <div class='col-cont'>
+    <div class="col-mid">
+    <div class='icons'><i class="fas fa-shopping-cart"></i></div>
+    <div class='col-ti'>E-Commerce</div>
+    <p class='col-disc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+    </div>
+    <div class="col-mid">
+      <div class='icons'><i class="fas fa-laptop"></i></div>
+      <div class='col-ti'>Responsive Design</div>
+      <p class='col-disc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+    </div>
+    <div class="col-mid">
+      <div class='icons'><i class="fas fa-lock"></i></div>
+      <div class='col-ti'>Web Security</div>
+      <p class='col-disc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+    </div>
+  </div>
+  </section>
+</body>
+<script>
+  $(function() {
+  var nav = $(".nav-top")
+  var title = $(".title")
+  console.log(nav)
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop()
+
+    if (scroll >= 100) {
+      nav.addClass("nav-alt")
+      title.addClass("title-alt")
+    } else {
+      nav.removeClass("nav-alt")
+      title.removeClass("title-alt")
+    }
+  })
+})
+</script>
+</html>

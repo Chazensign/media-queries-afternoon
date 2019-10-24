@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  align-content: center;
+}
+
+
+header {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center center;
+  height: 755px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1150px;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  transition: .3s;
+}
+.nav-alt {
+  background: #212529;
+  height: 55px;
+}
+.li-cont {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left:10px;
+}
+.links {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0;
+}
+.nav-link {
+  margin: 15px;
+}
+.nav-link:hover {
+  color: #FED037;
+  cursor: pointer;
+}
+#drop-menu {
+  display: none;
+  width: 80px;
+  height: 40px;
+  background: #FED037;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0;
+}
+.title {
+  color: #FED037;
+  font-size: 27px;
+  background: transparent;
+  font-family: 'Kaushan Script', cursive;
+  margin-left: 0;
+  transition: .3s;
+}
+.title-alt {
+  font-size: 20px;
+}
+.title:hover {
+  cursor: pointer;
+}
+.welcome-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+#welcome {
+  word-wrap: normal;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 44px;
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+#nice {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 75px;
+  margin: 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.tell {
+  height: 70px;
+  width: 225px;
+  background: #FED037;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.tell:hover {
+  cursor: pointer;
+}
+.serv-box {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serv {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.serv-des {
+  color: grey;
+  font-size: 19px;
+  font-style: italic;
+  margin: 18px;
+}
+.col-cont {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.col-mid {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 40px;
+max-width: 33.333333%;
+}
+
+.icons {
+  color: white;
+  font-size: 70px;
+  background:#FED037;
+  height: 130px;
+  width: 130px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.col-ti {
+  font-size: 30px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.col-disc {
+  font-size: 18px;
+  text-align: center;
+  color: grey;
+}
+@media (max-width: 1200px) {
+.li-cont {
+  max-width: 900px;
+}
+.col-mid {
+  
+  margin: 30px;
+  height: auto;
+}
+}
+@media (max-width: 990px) {
+  .nav-top {
+    background: #21252A;
+    height: 60px;
+  }
+  .title-alt {
+    font-size: 27px;
+  }
+.li-cont { 
+  max-width: 720px;
+}
+#drop-menu {
+  display: initial;
+}
+.links {
+  display: none;
+}
+header {
+  height: 880px;
+  min-width: unset;
+}
+}
+@media (max-width: 768px) {
+  header {
+    box-sizing: border-box;
+    height: 480px;
+  }
+  #welcome {
+    font-size: 22px;
+  }
+  #nice {
+    font-size: 50px;
+  }
+  .welcome-wrap {
+    margin-top: 50px;
+  }
+.li-cont {
+  max-width: 540px;
+}
+.col-cont {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.col-mid {
+  flex: 0 0 33.333333%;
+  max-width: unset;
+  margin: 10px;
+  max-width: 540px;
+}
+}
+@media (max-width: 576px) {
+header {
+    height: 480px;
+    min-width: unset;
+
+}
+}
