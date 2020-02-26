@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Slab|Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.typekit.net/luu5wvg.css">
   <script src="https://kit.fontawesome.com/0c75821042.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
@@ -18,7 +19,7 @@
     <div class='li-cont'>
     <div class='title'>Start Bootstrap</div>
       <div class='links'>
-        <a class='nav-link'>SERVICES</a>
+        <a class='nav-link' id='s' onclick="scrollWin(755)">SERVICES</a>
         <a class='nav-link'>PORTFOLIO</a>
         <a class='nav-link'>ABOUT</a>
         <a class='nav-link'>TEAM</a>
@@ -61,7 +62,6 @@
   $(function() {
   var nav = $(".nav-top")
   var title = $(".title")
-  console.log(nav)
   $(window).scroll(function() {
     var scroll = $(window).scrollTop()
 
@@ -72,7 +72,18 @@
       nav.removeClass("nav-alt")
       title.removeClass("title-alt")
     }
+    if (scroll < 755) $('#s').removeClass('yellow-nav')
+    if (scroll >= 755) $('#s').addClass('yellow-nav')
+    
   })
 })
+function scrollWin(loc) {
+  var scrollOptions = {
+    left: 0,
+    top: loc,
+    behavior: 'smooth'
+  }
+  window.scrollTo(scrollOptions);
+}
 </script>
 </html>
